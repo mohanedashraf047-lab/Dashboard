@@ -121,12 +121,12 @@ const TableSection = () => {
                   Date
                 </th>
               </tr>
-            </thead>{" "}
+            </thead>
             <tbody>
-              {recentOrders.map((order, index) => {
+              {recentOrders.map((order) => {
                 return (
-                  <tr className="border-b border-slate-200/50 dark:border-slate700/50 hover:bg-slate-50/50 dark:hover:bg-slate-800/50 transition-colors">
-                    <td className="p-4" key={index}>
+                  <tr key={order.id} className="border-b border-slate-200/50 dark:border-slate700/50 hover:bg-slate-50/50 dark:hover:bg-slate-800/50 transition-colors">
+                    <td className="p-4" >
                       <span className="text-sm font-medium text-blue">
                         {order.id}
                       </span>
@@ -188,10 +188,10 @@ const TableSection = () => {
 
         {/* Dynamic Data */}
         <div className="p-6 space-y-4">
-          {topProducts.map((product, index) => {
+          {topProducts.map((product) => {
             return (
               <div className="flex items-center justify-between p-4 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
-                <div className="flex-1" key={index}>
+                <div className="flex-1" key={product.name}>
                   <h4 className="text-sm font-semibold text-slate-800 dark:text-white">
                     {product.name}
                   </h4>

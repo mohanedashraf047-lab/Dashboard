@@ -21,9 +21,9 @@ import CalendarPage from "./components/Dashboard/pages/Calendar.jsx";
 import Reports from "./components/Dashboard/pages/Reports.jsx";
 import UsersActivity from "./components/Dashboard/pages/Users/Activity.jsx";
 import UsersAll from "./components/Dashboard/pages/Users/AllUsers.jsx";
-import AnalyticsInsights from "./components/Dashboard/pages/analytics/Insights.jsx";
-import AnalyticsReports from "./components/Dashboard/pages/analytics/Reports.jsx";
-import AnalyticsOverview from "./components/Dashboard/pages/analytics/Overview.jsx";
+import AnalyticsInsights from "./components/Dashboard/pages/Analytics/Insights.jsx";
+import AnalyticsReports from "./components/Dashboard/pages/Analytics/Reports.jsx";
+import AnalyticsOverview from "./components/Dashboard/pages/Analytics/Overview.jsx";
 
 import { auth } from "../firebaseConfig.js";
 import { onAuthStateChanged } from "firebase/auth";
